@@ -1,0 +1,7 @@
+{
+  "emmet.includeLanguages": {
+    "njk": "html",
+    "nunjucks": "html",
+    "webc": "html"
+  }
+}
