@@ -8,6 +8,8 @@ const tailwindcss = require('tailwindcss');
 const nesting = require('tailwindcss/nesting');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
+const eleventyVitePlugin = require('@11ty/eleventy-plugin-vite');
+const path = require('path');
 
 const postcssPipeline = [
   postcssImport,
@@ -36,6 +38,25 @@ module.exports = (eleventyConfig) => {
     components: "src/_includes/components/**/*.webc"
   });
 
+  eleventyConfig.addPlugin(eleventyVitePlugin, {
+    tempFolderName: '.11ty-vite',
+
+    viteOptions: {
+      server: {
+        mode: 'development',
+        middlewareMode: true
+      },
+      build: {
+        mode: 'production'
+      },
+      resolve: {
+        alias: {
+          '/node_modules': path.resolve('.', 'node_modules')
+        }
+      }
+    }
+  });
+
   eleventyConfig.addPlugin(bundlerPlugin, {
     transforms: [
       async function (content) {
@@ -54,6 +75,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  eleventyConfig.addTemplateFormats('webc');
   eleventyConfig.addTemplateFormats("css");
   eleventyConfig.addExtension("css", {
     outputFileExtension: "css",

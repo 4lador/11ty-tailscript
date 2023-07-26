@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="alador-navbar.css" class="rel" webc:scoped>
 
-<div class="nav-container">
+<div class="nav-container flex items-center px-4 py-3 text-white bg-blue-500 hover:bg-yellow-400">
     <div class="logo">
         <a href="/">Home</a>
     </div>
     <div class="nav">
         <a href="/documentation" class="link">Documentation</a>
+        <a href="/documentation" class="link">Test11</a>
     </div>
-</div>
+</div> 
