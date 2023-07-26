@@ -1,2 +1,6 @@
 @import './_global.css';
-@import './_tailwind.css'; /* Should be last */
+
+/* Should be last */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

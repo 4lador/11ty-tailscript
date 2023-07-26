@@ -3,10 +3,12 @@
     "start": "npm-run-all pages -p watch:*",
     "pages": "webpack",
     "watch:pages": "webpack --watch",
-    "watch:11ty": "eleventy --serve --watch"
+    "watch:11ty": "eleventy --serve --incremental --watch",
+    "watch:11ty-nested-webc-fix": "find src/_includes/components/ -type f -name \"*.webc\" | entr sh -c 'sleep 0.1; touch src/_includes/layouts/base.webc'"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.1",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
