@@ -1,8 +1,0 @@
-<div class="nav-container">
-    <div class="logo">
-        <a href="/">Home</a>
-    </div>
-    <div class="nav">
-        <a href="/documentation" class="link">Documentation</a>
-    </div>
-</div>

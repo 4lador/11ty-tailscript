@@ -3,11 +3,20 @@ const postcssImport = require("postcss-import");
 const postcssMediaMinmax = require("postcss-media-minmax");
 const autoprefixer = require("autoprefixer");
 const postcssCsso = require("postcss-csso");
-const sass = require("sass");
 const esbuild = require('esbuild');
 const tailwindcss = require('tailwindcss');
 const nesting = require('tailwindcss/nesting');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
+const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
+
+const postcssPipeline = [
+  postcssImport,
+  nesting,
+  tailwindcss,
+  postcssMediaMinmax,
+  autoprefixer,
+  postcssCsso,
+];
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = (eleventyConfig) => {
@@ -23,7 +32,23 @@ module.exports = (eleventyConfig) => {
     files: "./dist/scripts/**/*.js",
   });
 
-  eleventyConfig.addPlugin(pluginWebc);
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: "src/_includes/components/**/*.webc"
+  });
+
+  eleventyConfig.addPlugin(bundlerPlugin, {
+    transforms: [
+      async function (content) {
+        if (this.type === 'css') {
+          let output = await postcss(postcssPipeline).process(content, { from: this.page.inputPath, to: null });
+
+          return output.css;
+        }
+
+        return content;
+      }
+    ]
+  });
 
   eleventyConfig.addWatchTarget("./src/styles/");
 
@@ -40,14 +65,7 @@ module.exports = (eleventyConfig) => {
       }
 
       return async () => {
-        let output = await postcss([
-          postcssImport,
-          nesting,
-          tailwindcss,
-          postcssMediaMinmax,
-          autoprefixer,
-          postcssCsso,
-        ]).process(content, { from: path });
+        let output = await postcss(postcssPipeline).process(content, { from: path });
 
         return output.css;
       };
