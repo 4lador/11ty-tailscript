@@ -7,7 +7,7 @@
     <a href="/" class="align-middle">Home</a>
   </div>
 
-  <div class="nav flex flex-auto space-x-9 text-center">
+  <div class="nav flex flex-auto space-x-7 text-center">
     <a
       href="/documentation"
       class="link align-middle h-8 flex-auto hover:bg-blue-600"
