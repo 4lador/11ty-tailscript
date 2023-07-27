@@ -1,5 +1,14 @@
-# Eleventy Typescript Starter
+# Eleventail Starter
 
-# Credits
-Credits goes to theses articles that helped me build this quickly:
-- https://www.jameshill.dev/articles/typescript-and-11ty/#building-our-11ty-pages
+Hello, I am a minimalist starter project that glues together:
+
+- Eleventy
+- PostCSS (nesting, imports, media queries, minify)
+- Tailwind
+- Fontawesome
+- WebC
+- Webpack
+- Typescript
+- Vite
+
+Feel free to use and improve me without limitations :)
