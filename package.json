@@ -4,7 +4,7 @@
     "pages": "webpack",
     "watch:pages": "webpack --watch",
     "watch:11ty": "eleventy --serve --incremental --watch",
-    "watch:11ty-nested-webc-fix": "find src/_includes/components/ -type f -name \"*.webc\" | entr sh -c 'sleep 0.1; touch src/_includes/layouts/base.webc'"
+    "watch:11ty-nested-webc-fix": "find src/_includes/components/ -type f -name \"*.webc\" | entr sh -c 'sleep 0.2; touch src/_includes/layouts/base.webc'"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

@@ -38,29 +38,13 @@ module.exports = (eleventyConfig) => {
     components: "src/_includes/components/**/*.webc"
   });
 
-  eleventyConfig.addPlugin(eleventyVitePlugin, {
-    tempFolderName: '.11ty-vite',
-
-    viteOptions: {
-      server: {
-        mode: 'development',
-        middlewareMode: true
-      },
-      build: {
-        mode: 'production'
-      },
-      resolve: {
-        alias: {
-          '/node_modules': path.resolve('.', 'node_modules')
-        }
-      }
-    }
-  });
-
+  
   eleventyConfig.addPlugin(bundlerPlugin, {
     transforms: [
       async function (content) {
+        console.log('Bundling ' + this.type);
         if (this.type === 'css') {
+          console.log('Bundling CSS of ' + this.page.inputPath);
           let output = await postcss(postcssPipeline).process(content, { from: this.page.inputPath, to: null });
 
           return output.css;
