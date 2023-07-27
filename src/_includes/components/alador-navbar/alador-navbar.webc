@@ -1,11 +1,37 @@
-<link rel="stylesheet" href="alador-navbar.css" class="rel" webc:scoped>
+<link rel="stylesheet" href="alador-navbar.css" class="rel" webc:scoped />
 
-<div class="nav-container flex items-center px-4 py-3 text-white bg-blue-500 hover:bg-yellow-400">
-    <div class="logo">
-        <a href="/">Home</a>
-    </div>
-    <div class="nav">
-        <a href="/documentation" class="link">Documentation</a>
-        <a href="/documentation" class="link">Test11</a>
-    </div>
-</div> 
+<div
+  class="nav-container flex space-x-2 items-center px-4 py-3 text-white bg-blue-500"
+>
+  <div class="logo h-8 flex-none">
+    <a href="/" class="align-middle">Home</a>
+  </div>
+
+  <div class="nav flex flex-auto space-x-9 text-center">
+    <a
+      href="/documentation"
+      class="link align-middle h-8 flex-auto hover:bg-blue-600"
+      >Lien 1</a
+    >
+    <a
+      href="/documentation"
+      class="link align-middle h-8 flex-auto hover:bg-blue-600"
+      >Lien 2</a
+    >
+    <a
+      href="/documentation"
+      class="link align-middle h-8 flex-auto hover:bg-blue-600"
+      >Lien 3</a
+    >
+    <a
+      href="/documentation"
+      class="link align-middle h-8 flex-auto hover:bg-blue-600"
+      >Lien 4</a
+    >
+    <a
+      href="/documentation"
+      class="link align-middle h-8 flex-auto hover:bg-blue-600"
+      >Lien 5</a
+    >
+  </div>
+</div>
