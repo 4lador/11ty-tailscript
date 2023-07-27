@@ -8,8 +8,9 @@ const tailwindcss = require('tailwindcss');
 const nesting = require('tailwindcss/nesting');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
-const eleventyVitePlugin = require('@11ty/eleventy-plugin-vite');
+const fs = require('fs');
 const path = require('path');
+const eleventyVitePlugin = require('@11ty/eleventy-plugin-vite');
 
 const postcssPipeline = [
   postcssImport,
@@ -38,13 +39,11 @@ module.exports = (eleventyConfig) => {
     components: "src/_includes/components/**/*.webc"
   });
 
-  
+
   eleventyConfig.addPlugin(bundlerPlugin, {
     transforms: [
       async function (content) {
-        console.log('Bundling ' + this.type);
         if (this.type === 'css') {
-          console.log('Bundling CSS of ' + this.page.inputPath);
           let output = await postcss(postcssPipeline).process(content, { from: this.page.inputPath, to: null });
 
           return output.css;
@@ -60,23 +59,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addTemplateFormats('webc');
-  eleventyConfig.addTemplateFormats("css");
-  eleventyConfig.addExtension("css", {
-    outputFileExtension: "css",
-
-    compile: async (content, path) => {
-      console.log('path', path);
-      if (path !== "./src/styles/index.css") {
-        return;
-      }
-
-      return async () => {
-        let output = await postcss(postcssPipeline).process(content, { from: path });
-
-        return output.css;
-      };
-    },
-  });
 
   eleventyConfig.addTemplateFormats("js");
   eleventyConfig.addExtension("js", {
@@ -99,6 +81,47 @@ module.exports = (eleventyConfig) => {
         return output.outputFiles[0].text;
       };
     },
+  });
+
+  eleventyConfig.on('eleventy.before', async () => {
+    // CSS
+    const cssSourceFile = './src/styles/index.css';
+    const cssDestinationFile = './dist/styles/index.css';
+
+    fs.readFile(cssSourceFile, (err, css) => {
+      postcss(postcssPipeline)
+        .process(css, { from: cssSourceFile, to: cssDestinationFile })
+        .then(result => {
+          fs.writeFile(cssDestinationFile, result.css, () => true)
+        });
+    });
+
+    // JavaScript - to do
+  });
+
+  eleventyConfig.addPlugin(eleventyVitePlugin, {
+    tempFolderName: '.11ty-vite',
+
+    /** @type {import('vite').UserConfig} */
+    viteOptions: {
+      css: {
+        postcss: {
+          plugins: postcssPipeline
+        }
+      },
+      server: {
+        mode: 'development',
+        middlewareMode: true
+      },
+      build: {
+        mode: 'production'
+      },
+      resolve: {
+        alias: {
+          '/node_modules': path.resolve('.', 'node_modules')
+        }
+      }
+    }
   });
 
   return {
