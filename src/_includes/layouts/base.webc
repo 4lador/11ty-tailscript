@@ -22,10 +22,12 @@ title: My 11ty Typescript starter
   </head>
 
   <body>
-    <div>
-      <alador-navbar></alador-navbar>
-      <div @raw="content"></div>
-      <alador-footer @name="4lador"></alador-footer>
-    </div>
+    <section>
+      <div class="min-h-screen flex flex-col">
+        <alador-navbar></alador-navbar>
+        <page-content @raw="content" class="flex-1 flex items-stretch bg-blue-300"></page-content>
+        <alador-footer @name="4lador"></alador-footer>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,37 +1,39 @@
 <link rel="stylesheet" href="alador-navbar.css" class="rel" webc:scoped />
 
-<div
-  class="nav-container flex space-x-2 items-center px-4 py-3 text-white bg-blue-500"
+<section
+  class="nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b"
 >
-  <div class="logo h-8 flex-none">
-    <a href="/" class="align-middle">Home</a>
+  <div class="logo h-8 m-auto sm:flex-none text-center">
+    <a href="/" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"
+      ><i class="fa fa-home"></i
+    ></a>
   </div>
 
-  <div class="nav flex flex-auto space-x-7 text-center">
+  <div class="nav flex flex-auto flex-wrap md:space-x-7 text-center">
     <a
       href="/documentation"
-      class="link align-middle h-8 flex-auto hover:bg-blue-600"
-      >Lien 1</a
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Link 1</span></a
     >
     <a
       href="/documentation"
-      class="link align-middle h-8 flex-auto hover:bg-blue-600"
-      >Lien 2</a
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Link 2</span></a
     >
     <a
       href="/documentation"
-      class="link align-middle h-8 flex-auto hover:bg-blue-600"
-      >Lien 3</a
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Link 3</span></a
     >
     <a
       href="/documentation"
-      class="link align-middle h-8 flex-auto hover:bg-blue-600"
-      >Lien 4</a
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Link 4</span></a
     >
     <a
       href="/documentation"
-      class="link align-middle h-8 flex-auto hover:bg-blue-600"
-      >Lien 5</a
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Link 5</span></a
     >
   </div>
-</div>
+</section>
