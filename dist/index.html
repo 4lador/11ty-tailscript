@@ -11,27 +11,53 @@
   </head>
 
   <body>
-    <div>
-      <alador-navbar class="wvhbvdgfl">
+    <section>
+      <div class="min-h-screen flex flex-col">
+        <alador-navbar class="wvhbvdgfl">
 
-<div class="nav-container flex space-x-2 items-center px-4 py-3 text-white bg-blue-500">
-  <div class="logo h-8 flex-none">
-    <a href="/" class="align-middle">Home</a>
+<section class="nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b">
+  <div class="logo h-8 m-auto sm:flex-none text-center">
+    <a href="/" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"><i class="fa fa-home"></i></a>
   </div>
 
-  <div class="nav flex flex-auto space-x-7 text-center">
-    <a href="/documentation" class="link align-middle h-8 flex-auto hover:bg-blue-600">Lien 1</a>
-    <a href="/documentation" class="link align-middle h-8 flex-auto hover:bg-blue-600">Lien 2</a>
-    <a href="/documentation" class="link align-middle h-8 flex-auto hover:bg-blue-600">Lien 3</a>
-    <a href="/documentation" class="link align-middle h-8 flex-auto hover:bg-blue-600">Lien 4</a>
-    <a href="/documentation" class="link align-middle h-8 flex-auto hover:bg-blue-600">Lien 5</a>
+  <div class="nav flex flex-auto flex-wrap md:space-x-7 text-center">
+    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 1</span></a>
+    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 2</span></a>
+    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 3</span></a>
+    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 4</span></a>
+    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 5</span></a>
   </div>
-</div>
+</section>
 </alador-navbar>
-      <div>
-<h1 class="text-5xl font-bold underline">Eleventy Typescript SCSS Fontawesome starter project</h1></div>
-      <footer>
-    <div class="footer-container">
+        <page-content class="flex-1 flex items-stretch bg-blue-300"><section class="px-4 flex-auto">
+  <div class="container mx-auto mt-16">
+    <section class="text-center">
+      <h1 class="text-6xl md:text-8xl">11-Tail</h1>
+      <note class="text-xl md:text-2xl">The starter kit</note>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-3xl md:text-5xl/loose">What is it ?</h2>
+
+      <p class="text-xl md:text-2xl max-w-prose">
+        This is a <strong>minimalist</strong>, <strong>ready to use</strong>
+        <a href="https://www.11ty.dev" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Eleventy</a>
+        starter project that embarks
+        <a href="https://tailwindcss.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Tailwind</a>,
+        <a href="https://postcss.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">PostCSS</a> (nesting, imports, media
+        queries, minify),
+        <a href="https://fontawesome.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Fontawesome</a> Icons,
+        <a href="https://webpack.js.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Webpack</a>,
+        <a href="https://www.typescriptlang.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Typescript</a> and <a href="https://vitejs.dev/">Vite</a>
+      </p>
+    </section>
+  </div>
+</section>
+</page-content>
+        <alador-footer class="w9vxctpdt">
+
+<footer class="bg-blue-500 border-t">
+    <div>
         <p><span alt="4lador">4lador</span></p>
         <div class="social-icons">
             <a href="https://github.com/4lador" aria-label="Github" target="_blank" rel="noopener noreferrer">
@@ -39,8 +65,9 @@
             </a>
         </div>
     </div>
-</footer>
-    </div>
+</footer></alador-footer>
+      </div>
+    </section>
   
 
 </body>

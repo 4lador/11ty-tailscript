@@ -1,5 +1,7 @@
-<footer>
-    <div class="footer-container">
+<link rel="stylesheet" href="alador-footer.css" class="rel" webc:scoped />
+
+<footer class="bg-blue-500 border-t">
+    <div>
         <p><span @html="this.name" :alt="this.name"></span></p>
         <div class="social-icons">
             <a href="https://github.com/4lador" aria-label="Github" target="_blank" rel="noopener noreferrer">
