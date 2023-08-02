@@ -13,16 +13,15 @@ module.exports = {
     return result;
   }, {}),
   output: {
-    path: path.join(__dirname, '/src/_js'),
+    path: path.join(__dirname, '/src'),
     filename: '[name].js',
     libraryTarget: 'umd',
   },
   context: path.join(__dirname, '/src/'),
   cache: true,
-  target: 'node',
-  externals: fs.readdirSync('node_modules'),
+  devtool: false,
   resolve: {
-    extensions: ['.js', '.ts', '.tsx'],
+    extensions: ['.ts'],
   },
   mode: "development",
   module: {
@@ -58,5 +57,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  target: 'web'
 };

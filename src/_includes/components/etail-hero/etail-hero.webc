@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="etail-hero.css" class="rel" webc:scoped />
+
+<section class="text-center pt-32 pb-32 bg-blue-400">
+  <h1 class="text-6xl md:text-8xl font-hero-title">Tailscript</h1>
+  <note class="text-xl md:text-2xl font-hero-subtitle italic">The Eleventy starter kit</note>
+</section>

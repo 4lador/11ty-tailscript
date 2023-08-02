@@ -46,6 +46,8 @@ module.exports = (eleventyConfig) => {
         if (this.type === 'css') {
           let output = await postcss(postcssPipeline).process(content, { from: this.page.inputPath, to: null });
 
+          console.log('css', output.css);
+
           return output.css;
         }
 
@@ -55,6 +57,8 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addWatchTarget("./src/styles/");
+  eleventyConfig.addWatchTarget("./src/_includes/components/**/*.css");
+  eleventyConfig.addWatchTarget("./src/_includes/components/**/*.js");
 
   eleventyConfig.addPassthroughCopy("src/assets");
 
@@ -79,6 +83,23 @@ module.exports = (eleventyConfig) => {
         });
 
         return output.outputFiles[0].text;
+      };
+    },
+  });
+
+  eleventyConfig.addExtension("css", {
+    outputFileExtension: "css",
+
+    compile: async (content, path) => {
+      console.log('path', path);
+      if (path !== "./src/styles/index.css") {
+        return;
+      }
+
+      return async () => {
+        let output = await postcss(postcssPipeline).process(content, { from: path });
+
+        return output.css;
       };
     },
   });

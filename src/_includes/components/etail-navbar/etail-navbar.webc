@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="etail-navbar.css" class="rel" webc:scoped />
+
+<section
+  class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b"
+>
+  <div class="logo h-8 m-auto sm:flex-none text-center">
+    <a href="#top" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"
+      ><i class="fa fa-home"></i
+    ></a>
+  </div>
+
+  <div class="nav flex flex-auto flex-wrap md:space-x-7 text-center">
+    <a
+      href="#faq"
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">FAQ</span></a
+    >
+    <a
+      href="#documentation"
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Documentation</span></a
+    >
+    <a
+      href="#contribute"
+      class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"
+      ><span class="align-middle">Contribute</span></a
+    >
+  </div>
+</section>
