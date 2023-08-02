@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="etail-documentation.css" class="rel" webc:scoped />
+
+<section id="documentation" class="container mx-auto px-2 mt-16">
+  <h2 class="text-3xl md:text-5xl/loose">Installation</h2>
+
+  <h3 class="text-xl md:text-3xl/loose">Clone the repository</h3>
+
+  <p class="text-l">Clone the <a href="https://github.com/4lador/11ty-tailscript">Github project</a> repo</p>
+
+  <etail-code>git clone git@github.com:4lador/11ty-tailscript.git</etail-code>
+
+  <h3 class="text-xl md:text-3xl/loose">CD to the project folder</h3>
+
+  <etail-code>cd eleventail</etail-code>
+
+  <h3 class="text-xl md:text-3xl/loose">Install project libraries</h3>
+
+  <p class="text-l max-w-prose">
+    This project is using Yarn as package manager, if you would like to use npm
+    you only need to delete yarn.lock and install with npm
+  </p>
+
+  <etail-code>yarn install</etail-code>
+
+  <h2 class="text-xl md:text-5xl/loose">Usage</h2>
+
+  <h3 class="text-xl md:text-3xl/loose">Development</h3>
+
+  <p class="text-l max-w-prose">
+    Launch the dev server and start development using Vite
+  </p>
+
+  <etail-code>yarn run start</etail-code>
+
+  <h3 class="text-xl md:text-3xl/loose">Build</h3>
+
+  <p class="text-l max-w-prose">
+    When ready for production release just build the project with
+  </p>
+
+  <etail-code>yarn run build</etail-code>
+</section>

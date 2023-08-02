@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" refer rerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&amp;&amp;family=Titillium+Web:wght@300&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
-    <style></style>
+    <link rel="stylesheet" href="/bundle/dVXIgr1Ndv.css">
+    <script src="/bundle/70-rtCMTYP.js"></script>
   </head>
 
-  <body>
+  <body class="font-body">
     <section>
       <div class="min-h-screen flex flex-col">
-        <alador-navbar class="wvhbvdgfl">
+        <etail-navbar class="sticky top-0 wvvvl6z7-">
 
-<section class="nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b">
+<section class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b">
   <div class="logo h-8 m-auto sm:flex-none text-center">
-    <a href="/" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"><i class="fa fa-home"></i></a>
+    <a href="#top" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"><i class="fa fa-home"></i></a>
   </div>
 
   <div class="nav flex flex-auto flex-wrap md:space-x-7 text-center">
-    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 1</span></a>
-    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 2</span></a>
-    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 3</span></a>
-    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 4</span></a>
-    <a href="/documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Link 5</span></a>
+    <a href="#faq" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">FAQ</span></a>
+    <a href="#documentation" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Documentation</span></a>
+    <a href="#contribute" class="link inline-block h-8 flex-auto hover:bg-blue-600 hover:rounded hover:ring-2 hover:ring-cyan-100 active:bg-blue-800"><span class="align-middle">Contribute</span></a>
   </div>
 </section>
-</alador-navbar>
-        <page-content class="flex-1 flex items-stretch bg-blue-300"><section class="px-4 flex-auto">
-  <div class="container mx-auto mt-16">
-    <section class="text-center">
-      <h1 class="text-6xl md:text-8xl">11-Tail</h1>
-      <note class="text-xl md:text-2xl">The starter kit</note>
-    </section>
+</etail-navbar>
+        <page-content class="flex-1 flex flex-col items-stretch bg-blue-300"><etail-hero class="whsxug9qv">
 
+<section class="text-center pt-32 pb-32 bg-blue-400">
+  <h1 class="text-6xl md:text-8xl font-hero-title">Tailscript</h1>
+  <note class="text-xl md:text-2xl font-hero-subtitle italic">The Eleventy starter kit</note>
+</section>
+</etail-hero>
+<etail-faq id="faq" class="wt-37st24">
+
+<section class="px-4 flex-auto">
+  <div class="container mx-auto mt-16">
     <section class="mt-10">
       <h2 class="text-3xl md:text-5xl/loose">What is it ?</h2>
 
@@ -43,18 +49,129 @@
         This is a <strong>minimalist</strong>, <strong>ready to use</strong>
         <a href="https://www.11ty.dev" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Eleventy</a>
         starter project that embarks
-        <a href="https://tailwindcss.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Tailwind</a>,
-        <a href="https://postcss.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">PostCSS</a> (nesting, imports, media
-        queries, minify),
-        <a href="https://fontawesome.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Fontawesome</a> Icons,
-        <a href="https://webpack.js.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Webpack</a>,
-        <a href="https://www.typescriptlang.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Typescript</a> and <a href="https://vitejs.dev/">Vite</a>
+        <a href="https://tailwindcss.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Tailwind</a>,
+        <a href="https://postcss.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">PostCSS</a>
+        (nesting, imports, media queries, minify),
+        <a href="https://fontawesome.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Fontawesome</a>
+        Icons,
+        <a href="https://webpack.js.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Webpack</a>,
+        <a href="https://www.typescriptlang.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Typescript</a>
+        and
+        <a href="https://vitejs.dev/" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Vite</a>
       </p>
     </section>
   </div>
 </section>
-</page-content>
-        <alador-footer class="w9vxctpdt">
+</etail-faq>
+<etail-documentation id="documentation" class="w4btendie">
+
+<section id="documentation" class="container mx-auto px-2 mt-16">
+  <h2 class="text-3xl md:text-5xl/loose">Installation</h2>
+
+  <h3 class="text-xl md:text-3xl/loose">Clone the repository</h3>
+
+  <p class="text-l">Clone the <a href="https://github.com/4lador/11ty-tailscript">Github project</a> repo</p>
+
+  <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
+  <span>git clone git@github.com:4lador/11ty-tailscript.git</span>
+</code></pre>
+    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div>
+</etail-code>
+
+  <h3 class="text-xl md:text-3xl/loose">CD to the project folder</h3>
+
+  <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
+  <span>cd eleventail</span>
+</code></pre>
+    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div>
+</etail-code>
+
+  <h3 class="text-xl md:text-3xl/loose">Install project libraries</h3>
+
+  <p class="text-l max-w-prose">
+    This project is using Yarn as package manager, if you would like to use npm
+    you only need to delete yarn.lock and install with npm
+  </p>
+
+  <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
+  <span>yarn install</span>
+</code></pre>
+    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div>
+</etail-code>
+
+  <h2 class="text-xl md:text-5xl/loose">Usage</h2>
+
+  <h3 class="text-xl md:text-3xl/loose">Development</h3>
+
+  <p class="text-l max-w-prose">
+    Launch the dev server and start development using Vite
+  </p>
+
+  <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
+  <span>yarn run start</span>
+</code></pre>
+    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div>
+</etail-code>
+
+  <h3 class="text-xl md:text-3xl/loose">Build</h3>
+
+  <p class="text-l max-w-prose">
+    When ready for production release just build the project with
+  </p>
+
+  <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
+  <span>yarn run build</span>
+</code></pre>
+    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div>
+</etail-code>
+</section>
+</etail-documentation></page-content>
+        <etail-footer class="w2lp98hxh">
 
 <footer class="bg-blue-500 border-t">
     <div>
@@ -65,7 +182,7 @@
             </a>
         </div>
     </div>
-</footer></alador-footer>
+</footer></etail-footer>
       </div>
     </section>
   

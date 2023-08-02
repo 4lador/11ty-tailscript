@@ -15,18 +15,35 @@ title: My 11ty Typescript starter
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      refer
+      rerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" webc:keep />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      webc:keep
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&&family=Titillium+Web:wght@300&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+      webc:keep
     />
     <link webc:keep rel="stylesheet" href="./styles/index.css" />
-    <style @src="getBundleFileUrl('css')" webc:keep></style>
+    <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
+    <script :src="getBundleFileUrl('js')" webc:keep></script>
   </head>
 
-  <body>
+  <body class="font-body">
     <section>
       <div class="min-h-screen flex flex-col">
-        <alador-navbar></alador-navbar>
-        <page-content @raw="content" class="flex-1 flex items-stretch bg-blue-300"></page-content>
-        <alador-footer @name="4lador"></alador-footer>
+        <etail-navbar class="sticky top-0"></etail-navbar>
+        <page-content
+          @raw="content"
+          class="flex-1 flex flex-col items-stretch bg-blue-300"
+        ></page-content>
+        <etail-footer @name="4lador"></etail-footer>
       </div>
     </section>
   </body>

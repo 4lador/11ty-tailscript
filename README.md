@@ -1,14 +1,14 @@
-# Eleventail Starter
+# Tailscript - An Eleventy (11ty) Starter
 
 Hello, I am a minimalist starter project that glues together:
 
 - Eleventy
-- PostCSS (nesting, imports, media queries, minify)
+- Typescript
 - Tailwind
+- PostCSS (nesting, imports, media queries, minify)
 - Fontawesome
 - WebC
 - Webpack
-- Typescript
 - Vite
 
 Feel free to use and improve me without limitations :)

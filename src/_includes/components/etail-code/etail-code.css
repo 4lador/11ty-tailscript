@@ -1,0 +1,19 @@
+:host {
+    #copyBtn {
+        color: white;
+    
+        &.copied {
+            color: antiquewhite;
+            transition: all 1000ms linear;
+            
+            .label-copied {
+                font-weight: bold;
+                transition: all 1000ms linear;
+            }
+        }
+    }
+}
+
+
+
+
