@@ -25,16 +25,16 @@ class TailscriptCodeViewerComponent extends HTMLElement {
     copyToClipboard(event: MouseEvent) {
         event.preventDefault();
 
-        if (event === null || !(event.target instanceof HTMLElement)) {
-            throw new Error('Invalid target');
+        const target: HTMLElement | null = this.codeArea.querySelector('#commands');
+        
+        if (target) {
+            const text = target.innerText;
+            clipBoardService.copy(text);
+            this.handleCopiedTransition();
+        } else {
+            throw new Error('invalid target');
         }
 
-        const target: HTMLElement | null = event.target;
-
-        const text = target.innerText;
-        clipBoardService.copy(text);
-
-        this.handleCopiedTransition();
     }
 
     handleCopiedTransition() {

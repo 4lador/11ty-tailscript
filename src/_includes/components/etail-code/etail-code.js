@@ -268,13 +268,15 @@ class TailscriptCodeViewerComponent extends HTMLElement {
     }
     copyToClipboard(event) {
         event.preventDefault();
-        if (event === null || !(event.target instanceof HTMLElement)) {
-            throw new Error('Invalid target');
+        const target = this.codeArea.querySelector('#commands');
+        if (target) {
+            const text = target.innerText;
+            clipboard_service_1.clipBoardService.copy(text);
+            this.handleCopiedTransition();
         }
-        const target = event.target;
-        const text = target.innerText;
-        clipboard_service_1.clipBoardService.copy(text);
-        this.handleCopiedTransition();
+        else {
+            throw new Error('invalid target');
+        }
     }
     handleCopiedTransition() {
         const btn = this.copyBtn;

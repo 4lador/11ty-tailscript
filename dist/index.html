@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" href="/assets/favicon-fdc7f1d8.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" refer rerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&amp;&amp;family=Titillium+Web:wght@300&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="/bundle/dVXIgr1Ndv.css">
-    <script src="/bundle/70-rtCMTYP.js"></script>
+    
+    
+    <script type="module" crossorigin src="/assets/index-1dfe6629.js"></script>
+    <link rel="stylesheet" href="/assets/index-c446b02e.css">
   </head>
 
   <body class="font-body">
@@ -20,8 +22,8 @@
         <etail-navbar class="sticky top-0 wvvvl6z7-">
 
 <section class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b">
-  <div class="logo h-8 m-auto sm:flex-none text-center">
-    <a href="#top" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"><i class="fa fa-home"></i></a>
+  <div class="logo h-8 pr-4 m-auto sm:flex-none text-center">
+    <a href="#top" class="align-middle text-3xl hover:text-orange-300 active:text-orange-400"><i class="fa fa-home"></i></a>
   </div>
 
   <div class="nav flex flex-auto flex-wrap md:space-x-7 text-center">
@@ -34,7 +36,7 @@
         <page-content class="flex-1 flex flex-col items-stretch bg-blue-300"><etail-hero class="whsxug9qv">
 
 <section class="text-center pt-32 pb-32 bg-blue-400">
-  <h1 class="text-6xl md:text-8xl font-hero-title">Tailscript</h1>
+  <h1 class="text-5xl sm:text-6xl md:text-8xl font-hero-title neon">Tailscript</h1>
   <note class="text-xl md:text-2xl font-hero-subtitle italic">The Eleventy starter kit</note>
 </section>
 </etail-hero>
@@ -45,7 +47,7 @@
     <section class="mt-10">
       <h2 class="text-3xl md:text-5xl/loose">What is it ?</h2>
 
-      <p class="text-xl md:text-2xl max-w-prose">
+      <p class="text-xl md:text-2xl max-w-prose text-justify">
         This is a <strong>minimalist</strong>, <strong>ready to use</strong>
         <a href="https://www.11ty.dev" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Eleventy</a>
         starter project that embarks
@@ -66,109 +68,185 @@
 <etail-documentation id="documentation" class="w4btendie">
 
 <section id="documentation" class="container mx-auto px-2 mt-16">
-  <h2 class="text-3xl md:text-5xl/loose">Installation</h2>
+    <h2 class="text-3xl md:text-5xl/loose">Installation</h2>
 
-  <h3 class="text-xl md:text-3xl/loose">Clone the repository</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Clone the repository</h3>
 
-  <p class="text-l">Clone the <a href="https://github.com/4lador/11ty-tailscript">Github project</a> repo</p>
+    <p class="text-lg">
+        Clone the
+        <a href="https://github.com/4lador/11ty-tailscript">Github project</a>
+        repo
+    </p>
 
-  <etail-code class="w8hf8aewh">
+    <etail-code class="w8hf8aewh">
 
 
-<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
-    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
-  <span>git clone git@github.com:4lador/11ty-tailscript.git</span>
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">git clone git@github.com:4lador/11ty-tailscript.git</span></span>
 </code></pre>
-    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
         <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
         <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
     </button>
-</div>
-</etail-code>
+</div></etail-code>
 
-  <h3 class="text-xl md:text-3xl/loose">CD to the project folder</h3>
+    <h3 class="text-2xl md:text-3xl/loose">CD to the project folder</h3>
 
-  <etail-code class="w8hf8aewh">
+    <etail-code class="w8hf8aewh">
 
 
-<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
-    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
-  <span>cd eleventail</span>
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">cd 11ty-tailscript</span></span>
 </code></pre>
-    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
         <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
         <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
     </button>
-</div>
-</etail-code>
+</div></etail-code>
 
-  <h3 class="text-xl md:text-3xl/loose">Install project libraries</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Install project libraries</h3>
 
-  <p class="text-l max-w-prose">
-    This project is using Yarn as package manager, if you would like to use npm
-    you only need to delete yarn.lock and install with npm
-  </p>
+    <p class="text-lg max-w-prose">
+        This project is using Yarn as package manager, if you would like to use
+        npm you only need to delete yarn.lock and install with npm
+    </p>
 
-  <etail-code class="w8hf8aewh">
+    <etail-code class="w8hf8aewh">
 
 
-<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
-    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
-  <span>yarn install</span>
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">yarn install</span></span>
 </code></pre>
-    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
         <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
         <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
     </button>
-</div>
-</etail-code>
+</div></etail-code>
 
-  <h2 class="text-xl md:text-5xl/loose">Usage</h2>
+    <h2 class="text-3xl md:text-5xl/loose">Usage</h2>
 
-  <h3 class="text-xl md:text-3xl/loose">Development</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Development</h3>
 
-  <p class="text-l max-w-prose">
-    Launch the dev server and start development using Vite
-  </p>
+    <p class="text-lg max-w-prose">
+        Launch the dev server and start development using Vite
+    </p>
 
-  <etail-code class="w8hf8aewh">
+    <etail-code class="w8hf8aewh">
 
 
-<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
-    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
-  <span>yarn run start</span>
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">yarn run start</span></span>
 </code></pre>
-    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
         <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
         <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
     </button>
-</div>
-</etail-code>
+</div></etail-code>
 
-  <h3 class="text-xl md:text-3xl/loose">Build</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Build</h3>
 
-  <p class="text-l max-w-prose">
-    When ready for production release just build the project with
-  </p>
+    <p class="text-lg max-w-prose">
+        When ready for production release just build the project with
+    </p>
 
-  <etail-code class="w8hf8aewh">
+    <etail-code class="w8hf8aewh">
 
 
-<div id="etail-code-template" class="group text-sm md:text-base flex align-middle w-fit">
-    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
-  <span>yarn run build</span>
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">yarn run build</span></span>
 </code></pre>
-    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
         <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
         <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
     </button>
-</div>
-</etail-code>
+</div></etail-code>
+</section>
+
+<section id="contribute" class="container mx-auto px-2 mt-16">
+    <h2 class="text-3xl md:text-5xl/loose">Contribute</h2>
+    <p class="text-lg">
+        If you would like to contribute to add features or maybe fix an eventual
+        bug that you found, you're welcome and I thanks you
+        <i class="far fa-smile-beam"></i>
+    </p>
+
+    <h3 class="text-2xl md:text-3xl/loose">Fork the repository</h3>
+    <p class="text-lg">
+        Fork the project on
+        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github</a>
+    </p>
+
+    <h3 class="text-2xl md:text-3xl/loose">CD to the project folder</h3>
+    <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">cd 11ty-tailscript</span></span>
+</code></pre>
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div></etail-code>
+
+    <h3 class="text-2xl md:text-3xl/loose">Create a new branch</h3>
+    <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">git checkout -b &lt;branch-name&gt;</span></span>
+</code></pre>
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div></etail-code>
+
+    <h3 class="text-2xl md:text-3xl/loose">Making and pushing changes</h3>
+    <etail-code class="w8hf8aewh">
+
+
+<div id="etail-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">git add .<br>git commit -m "a short description of the changes"</span></span>
+</code></pre>
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div></etail-code>
+
+    <h3 class="text-2xl md:text-3xl/loose">Make a pull request</h3>
+
+    <p class="text-lg">
+        Head on over the
+        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github</a>
+        project, then you will see a banner indicating that your branch is ahead
+        of the main project branch. Click on <strong>contribute</strong> and
+        then <strong>Open a pull request</strong>
+    </p>
+
+    <h3 class="text-2xl md:text-3xl/loose">More informations</h3>
+    <p class="text-lg">
+        If you would want more informations about Github projects contributions
+        you can check this page on
+        <a target="_blank" href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github Docs</a>
+    </p>
 </section>
 </etail-documentation></page-content>
         <etail-footer class="w2lp98hxh">

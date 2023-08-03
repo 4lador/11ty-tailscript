@@ -1,0 +1,40 @@
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0eg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #08e95ea8, 0 0 10px #08e95ea8, 0 0 10px #08e95ea8, 0 0 10px #08e95ea8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+}
+
+.tilt-shaking {
+    animation-name: tilt-shaking;
+    animation-duration: 0.35s;
+    animation-iteration-count: infinite;
+}
+
+.neon {
+    margin: 1rem auto;
+    animation: neon 4s ease infinite;
+}
