@@ -9,8 +9,6 @@ const nesting = require('tailwindcss/nesting');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const { mkdir, access, writeFile, readFile } = require('node:fs/promises');
-const path = require('path');
-const eleventyVitePlugin = require('@11ty/eleventy-plugin-vite');
 
 const postcssPlugins = [
   postcssImport,
@@ -102,29 +100,6 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.on('eleventy.before', async () => await makeFolderIfNeeded('./dist/styles'));
   eleventyConfig.on('eleventy.after', async () => await postCssProcessing(postcssPlugins));
-
-  
-  eleventyConfig.addPlugin(eleventyVitePlugin, {
-    tempFolderName: '.11ty-vite',
-
-    /** @type {import('vite').UserConfig} */
-    viteOptions: {
-      css: {
-        postcss: {
-          plugins: postcssPlugins
-        }
-      },
-      server: {
-        mode: 'development',
-        middlewareMode: true
-      },
-      resolve: {
-        alias: {
-          '/node_modules': path.resolve('.', 'node_modules')
-        }
-      }
-    }
-  });
 
   async function postCssProcessing(plugins) {
     console.log('post processing css');

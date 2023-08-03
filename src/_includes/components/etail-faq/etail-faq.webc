@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="etail-faq.css" class="rel" webc:scoped />
 
-<section class="px-4 flex-auto">
-  <div class="container mx-auto mt-16">
+<section class="flex-auto">
+  <div class="container mx-auto mt-16 px-8">
     <section class="mt-10">
       <h2 class="text-3xl md:text-5xl/loose">What is it ?</h2>
 

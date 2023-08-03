@@ -41,7 +41,7 @@ title: My 11ty Typescript starter
         <etail-navbar class="sticky top-0"></etail-navbar>
         <page-content
           @raw="content"
-          class="flex-1 flex flex-col items-stretch bg-blue-300"
+          class="flex-1 flex flex-col items-stretch bg-blue-300 pb-10"
         ></page-content>
         <etail-footer @name="4lador"></etail-footer>
       </div>
