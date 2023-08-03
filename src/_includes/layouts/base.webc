@@ -14,18 +14,6 @@ title: My 11ty Typescript starter
         <title @html="this.title"></title>
         <link rel="icon" href="/assets/favicon.ico" />
         <link webc:keep rel="stylesheet" href="/assets/libs/fontawesome/all.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" webc:keep />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin
-            webc:keep
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bungee+Spice&&family=Titillium+Web:wght@300&family=Permanent+Marker&display=swap"
-            rel="stylesheet"
-            webc:keep
-        />
         <link webc:keep rel="stylesheet" href="./styles/index.css" />
         <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
         <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
