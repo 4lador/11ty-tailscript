@@ -1,12 +1,15 @@
 <link rel="stylesheet" href="etail-footer.css" class="rel" webc:scoped />
 
-<footer class="bg-blue-500 border-t">
-    <div>
-        <p><span @html="this.name" :alt="this.name"></span></p>
-        <div class="social-icons">
-            <a href="https://github.com/4lador" aria-label="Github" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-            </a>
+<footer class="bg-blue-500 border-box border-t">
+    <div class="flex flex-col items-center justify-center text-xl h-full">
+        <div>
+            Made with <i class="fa fa-heart text-red-700"></i> and <i class="fa fa-coffee text-amber-950"></i>
         </div>
+
+        <div>
+            by <a href="https://github.com/4lador" target="_blank" class="font-medium text-white dark:text-blue-500 hover:underline"><span @html="this.name" :alt="this.name"></span></a>
+        </div>
+
+        <div>2023</div>
     </div>
 </footer>

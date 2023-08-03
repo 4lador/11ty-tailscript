@@ -2,7 +2,7 @@
   "scripts": {
     "start": "npm run clean && npm-run-all pages -p watch:*",
     "pages": "webpack",
-    "build": "npm run clean && npm run pages && eleventy",
+    "build": "npm run clean && npm run pages && npx @11ty/eleventy --config=eleventy-build.config.js",
     "watch:pages": "webpack --watch",
     "watch:11ty": "eleventy --serve --incremental --watch",
     "watch:11ty-nested-webc-fix": "find src/_includes/components/ -type f -name \"*.webc\" | entr sh -c 'sleep 0.2; touch src/_includes/layouts/base.webc'",

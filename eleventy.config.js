@@ -100,8 +100,10 @@ module.exports = (eleventyConfig) => {
     },
   });
 
-  eleventyConfig.on('eleventy.after', async () => postCssProcessing(postcssPlugins));
+  eleventyConfig.on('eleventy.before', async () => await makeFolderIfNeeded('./dist/styles'));
+  eleventyConfig.on('eleventy.after', async () => await postCssProcessing(postcssPlugins));
 
+  
   eleventyConfig.addPlugin(eleventyVitePlugin, {
     tempFolderName: '.11ty-vite',
 
@@ -116,9 +118,6 @@ module.exports = (eleventyConfig) => {
         mode: 'development',
         middlewareMode: true
       },
-      build: {
-        mode: 'production'
-      },
       resolve: {
         alias: {
           '/node_modules': path.resolve('.', 'node_modules')
@@ -132,23 +131,8 @@ module.exports = (eleventyConfig) => {
     // CSS
     const cssSourceFile = './src/styles/index.css';
     const cssDestinationFile = './dist/styles/index.css';
-
-    const outputDir = './dist/styles';
-    const exists = async (path) => {
-      try {
-        await access(path);
-        return true;
-      } catch (error) {
-        return false;
-      }
-    };
-
-    const dirExists = await exists(outputDir);
-
-    if (!dirExists) {
-      console.log('Creating missing CSS folder: ' + outputDir);
-      await mkdir(outputDir, { recursive: true });
-    }
+    
+    await makeFolderIfNeeded('./dist/styles');
 
     const css = await readFile(cssSourceFile);
 
@@ -160,6 +144,33 @@ module.exports = (eleventyConfig) => {
         await writeFile(cssDestinationFile, result.css, () => true)
       })
       .catch((error) => { throw new Error(error) });
+  }
+
+  async function makeFolderIfNeeded(dir) {
+    const outputDir = dir;
+    const exists = async (path) => {
+      try {
+        await access(path);
+        return true;
+      } catch (error) {
+        return false;
+      }
+    };
+
+    let dirExists = await exists(outputDir);
+    console.log('dirExists: ' + dirExists);
+
+    if (!dirExists) {
+      console.log('Creating missing CSS folder: ' + outputDir);
+
+      try {
+        await mkdir(outputDir, { recursive: true });
+        dirExists = await exists(outputDir);
+        console.log('dirExists: ' + dirExists);
+      } catch (error) {
+        console.error(error);
+      }
+    }
   }
 
   return {
