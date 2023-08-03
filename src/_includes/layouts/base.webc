@@ -4,47 +4,51 @@ title: My 11ty Typescript starter
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title @html="this.title"></title>
-    <link rel="icon" href="/assets/favicon.ico" />
-    <link
-      webc:keep
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      refer
-      rerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" webc:keep />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-      webc:keep
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&&family=Titillium+Web:wght@300&family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-      webc:keep
-    />
-    <link webc:keep rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
-    <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="An Eleventy starter kit using Typescript, Tailwind, PostCSS, Webpack, Vite, Fontawesome and WebC. Made by 4lador in 2023"
+        />
+        <title @html="this.title"></title>
+        <link rel="icon" href="/assets/favicon.ico" />
+        <link
+            webc:keep
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            refer
+            rerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" webc:keep />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+            webc:keep
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee+Spice&&family=Titillium+Web:wght@300&family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+            webc:keep
+        />
+        <link webc:keep rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+        <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
+    </head>
 
-  <body class="font-body">
-    <section>
-      <div class="min-h-screen flex flex-col">
-        <etail-navbar class="sticky top-0"></etail-navbar>
-        <page-content
-          @raw="content"
-          class="flex-1 flex flex-col items-stretch bg-blue-300 pb-10"
-        ></page-content>
-        <etail-footer @name="4lador"></etail-footer>
-      </div>
-    </section>
-  </body>
+    <body class="font-body">
+        <section>
+            <div class="min-h-screen flex flex-col">
+                <etail-navbar class="sticky top-0"></etail-navbar>
+                <page-content
+                    @raw="content"
+                    class="flex-1 flex flex-col items-stretch bg-blue-300 pb-10"
+                ></page-content>
+                <etail-footer @name="4lador"></etail-footer>
+            </div>
+        </section>
+    </body>
 </html>
