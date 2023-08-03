@@ -32,7 +32,7 @@ title: My 11ty Typescript starter
     />
     <link webc:keep rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
-    <script :src="getBundleFileUrl('js')" webc:keep></script>
+    <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
   </head>
 
   <body class="font-body">

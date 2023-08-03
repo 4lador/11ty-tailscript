@@ -5,7 +5,7 @@
     <section class="mt-10">
       <h2 class="text-3xl md:text-5xl/loose">What is it ?</h2>
 
-      <p class="text-xl md:text-2xl max-w-prose">
+      <p class="text-xl md:text-2xl max-w-prose text-justify">
         This is a <strong>minimalist</strong>, <strong>ready to use</strong>
         <a
           href="https://www.11ty.dev"

@@ -1,42 +1,101 @@
 <link rel="stylesheet" href="etail-documentation.css" class="rel" webc:scoped />
 
 <section id="documentation" class="container mx-auto px-2 mt-16">
-  <h2 class="text-3xl md:text-5xl/loose">Installation</h2>
+    <h2 class="text-3xl md:text-5xl/loose">Installation</h2>
 
-  <h3 class="text-xl md:text-3xl/loose">Clone the repository</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Clone the repository</h3>
 
-  <p class="text-l">Clone the <a href="https://github.com/4lador/11ty-tailscript">Github project</a> repo</p>
+    <p class="text-lg">
+        Clone the
+        <a href="https://github.com/4lador/11ty-tailscript">Github project</a>
+        repo
+    </p>
 
-  <etail-code>git clone git@github.com:4lador/11ty-tailscript.git</etail-code>
+    <etail-code>git clone git@github.com:4lador/11ty-tailscript.git</etail-code>
 
-  <h3 class="text-xl md:text-3xl/loose">CD to the project folder</h3>
+    <h3 class="text-2xl md:text-3xl/loose">CD to the project folder</h3>
 
-  <etail-code>cd eleventail</etail-code>
+    <etail-code>cd 11ty-tailscript</etail-code>
 
-  <h3 class="text-xl md:text-3xl/loose">Install project libraries</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Install project libraries</h3>
 
-  <p class="text-l max-w-prose">
-    This project is using Yarn as package manager, if you would like to use npm
-    you only need to delete yarn.lock and install with npm
-  </p>
+    <p class="text-lg max-w-prose">
+        This project is using Yarn as package manager, if you would like to use
+        npm you only need to delete yarn.lock and install with npm
+    </p>
 
-  <etail-code>yarn install</etail-code>
+    <etail-code>yarn install</etail-code>
 
-  <h2 class="text-xl md:text-5xl/loose">Usage</h2>
+    <h2 class="text-3xl md:text-5xl/loose">Usage</h2>
 
-  <h3 class="text-xl md:text-3xl/loose">Development</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Development</h3>
 
-  <p class="text-l max-w-prose">
-    Launch the dev server and start development using Vite
-  </p>
+    <p class="text-lg max-w-prose">
+        Launch the dev server and start development using Vite
+    </p>
 
-  <etail-code>yarn run start</etail-code>
+    <etail-code>yarn run start</etail-code>
 
-  <h3 class="text-xl md:text-3xl/loose">Build</h3>
+    <h3 class="text-2xl md:text-3xl/loose">Build</h3>
 
-  <p class="text-l max-w-prose">
-    When ready for production release just build the project with
-  </p>
+    <p class="text-lg max-w-prose">
+        When ready for production release just build the project with
+    </p>
 
-  <etail-code>yarn run build</etail-code>
+    <etail-code>yarn run build</etail-code>
+</section>
+
+<section id="contribute" class="container mx-auto px-2 mt-16">
+    <h2 class="text-3xl md:text-5xl/loose">Contribute</h2>
+    <p class="text-lg">
+        If you would like to contribute to add features or maybe fix an eventual
+        bug that you found, you're welcome and I thanks you
+        <i class="far fa-smile-beam"></i>
+    </p>
+
+    <h3 class="text-2xl md:text-3xl/loose">Fork the repository</h3>
+    <p class="text-lg">
+        Fork the project on
+        <a
+            href="https://github.com/4lador/11ty-tailscript"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >Github</a
+        >
+    </p>
+
+    <h3 class="text-2xl md:text-3xl/loose">CD to the project folder</h3>
+    <etail-code>cd 11ty-tailscript</etail-code>
+
+    <h3 class="text-2xl md:text-3xl/loose">Create a new branch</h3>
+    <etail-code>git checkout -b &lt;branch-name&gt;</etail-code>
+
+    <h3 class="text-2xl md:text-3xl/loose">Making and pushing changes</h3>
+    <etail-code
+        >git add .<br />git commit -m "a short description of the changes"</etail-code>
+
+    <h3 class="text-2xl md:text-3xl/loose">Make a pull request</h3>
+
+    <p class="text-lg">
+        Head on over the
+        <a
+            href="https://github.com/4lador/11ty-tailscript"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >Github</a
+        >
+        project, then you will see a banner indicating that your branch is ahead
+        of the main project branch. Click on <strong>contribute</strong> and
+        then <strong>Open a pull request</strong>
+    </p>
+
+    <h3 class="text-2xl md:text-3xl/loose">More informations</h3>
+    <p class="text-lg">
+        If you would want more informations about Github projects contributions
+        you can check this page on
+        <a
+            target="_blank"
+            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects"
+            >Github Docs</a
+        >
+    </p>
 </section>

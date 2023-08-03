@@ -2,14 +2,14 @@
 <link rel="stylesheet" href="./etail-code.css" class="rel" webc:scoped />
 
 <div
-    class="group text-sm md:text-base flex align-middle w-fit"
+    class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2"
     id="etail-code-template"
 >
     <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard"
-  class="flex items-center bg-gray-100 p-4 my-2 h-fit w-fit cursor-pointer hover:text-green-500">
-  <span><slot></slot></span>
+  class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer  ">
+  <span>$ <span id="commands"><slot></slot></span></span>
 </code></pre>
-    <button id="copyBtn" class="group hidden md:peer-hover:block ml-3 text-gray-400">
+    <button id="copyBtn" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24" data-onclick="copyToClipboard">
         <i class="fa fa-clipboard"></i>
         <span class="label inline-block group-[&.copied]:hidden">Copy</span>
         <span class="label-copied tilt-shaking hidden group-[&.copied]:inline-block">Copied !</span>

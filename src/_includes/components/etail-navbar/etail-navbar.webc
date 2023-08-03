@@ -3,8 +3,8 @@
 <section
   class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b"
 >
-  <div class="logo h-8 m-auto sm:flex-none text-center">
-    <a href="#top" class="align-middle text-3xl hover:text-blue-600 active:text-blue-800"
+  <div class="logo h-8 pr-4 m-auto sm:flex-none text-center">
+    <a href="#top" class="align-middle text-3xl hover:text-orange-300 active:text-orange-400"
       ><i class="fa fa-home"></i
     ></a>
   </div>
