@@ -7,6 +7,7 @@ const esbuild = require('esbuild');
 const tailwindcss = require('tailwindcss');
 const nesting = require('tailwindcss/nesting');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
+const purgecss = require('@fullhuman/postcss-purgecss');
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const { mkdir, access, writeFile, readFile } = require('node:fs/promises');
 const path = require('path');
@@ -128,22 +129,40 @@ module.exports = (eleventyConfig) => {
 
   async function postCssProcessing(plugins) {
     console.log('post processing css');
-    // CSS
-    const cssSourceFile = './src/styles/index.css';
-    const cssDestinationFile = './dist/styles/index.css';
+
+    const srcDir = './src/styles';
+    const destDir = './dist/styles';
+
+    const cssOperations = [
+      {
+        source: `${srcDir}/index.css`,
+        destination: `${destDir}/index.css`,
+        plugins: postcssPlugins
+      },
+      {
+        source: `${srcDir}/fonts.css`,
+        destination: `${destDir}/fonts.css`,
+        plugins: [...postcssPlugins, purgecss({content: ['./dist/**/*.html']})]
+      }
+    ];
     
     await makeFolderIfNeeded('./dist/styles');
 
-    const css = await readFile(cssSourceFile);
+    for (const operation of cssOperations) {
+      console.log('Reading css file: ' + operation.source);
 
-    postcss(plugins)
-      .process(css, { from: cssSourceFile, to: null })
-      .then(async (result) => {
-        console.log('Writing css of length ' + result.css.length);
-        console.log('Writing CSS file to ' + cssDestinationFile);
-        await writeFile(cssDestinationFile, result.css, () => true)
-      })
-      .catch((error) => { throw new Error(error) });
+      const css = await readFile(operation.source);
+
+      postcss(operation.plugins)
+        .process(css, { from: operation.source, to: null })
+        .then(async (result) => {
+          console.log('Writing css of length ' + result.css.length);
+          console.log('Writing CSS file to ' + operation.destination);
+          await writeFile(operation.destination, result.css, () => true)
+        })
+        .catch((error) => { throw new Error(error) });
+    }
+    
   }
 
   async function makeFolderIfNeeded(dir) {

@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      "hero-title": ['Bungee Spice', 'Arial', 'cursive'],
-      "hero-subtitle": ['Permanent Marker', 'Arial', 'cursive'],
-      "body": ['Titillium Web', 'Arial', 'sans-serif']
+      "hero-title": ['Bungee Spice', 'cursive'],
+      "hero-subtitle": ['Permanent Marker', 'cursive'],
+      "body": ['Titillium Web', 'sans-serif']
     }
   },
   plugins: [],

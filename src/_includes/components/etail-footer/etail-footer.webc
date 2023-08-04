@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="etail-footer.css" class="rel" webc:scoped />
 
-<footer class="bg-blue-500 border-box border-t">
-    <div class="flex flex-col items-center justify-center text-xl h-full">
+<footer class="bg-blue-800 border-box border-t">
+    <div class="flex flex-col items-center justify-center text-xl h-full text-white">
         <div>
             Made with <i class="fa fa-heart text-red-700"></i> and <i class="fa fa-coffee text-amber-950"></i>
         </div>

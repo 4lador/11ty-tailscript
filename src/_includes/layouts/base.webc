@@ -13,7 +13,11 @@ title: My 11ty Typescript starter
         />
         <title @html="this.title"></title>
         <link rel="icon" href="/assets/favicon.ico" />
-        <link webc:keep rel="stylesheet" href="/assets/libs/fontawesome/all.min.css" />
+        
+        <!-- Hosted fonts & used Fontawesome icons -->
+        <link rel="preload" href="./styles/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="./styles/fonts.css"></noscript>
+        
         <link webc:keep rel="stylesheet" href="./styles/index.css" />
         <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
         <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
@@ -25,7 +29,7 @@ title: My 11ty Typescript starter
                 <etail-navbar class="sticky top-0"></etail-navbar>
                 <page-content
                     @raw="content"
-                    class="flex-1 flex flex-col items-stretch bg-blue-300 pb-10"
+                    class="flex-1 flex flex-col items-stretch bg-gray-200 pb-10"
                 ></page-content>
                 <etail-footer @name="4lador"></etail-footer>
             </div>
