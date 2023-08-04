@@ -9,46 +9,46 @@
         This is a <strong>minimalist</strong>, <strong>ready to use</strong>
         <a
           href="https://www.11ty.dev"
-          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
           >Eleventy</a
         >
         starter project that embarks
         <a
           href="https://tailwindcss.com/"
-          class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline"
           target="_blank"
           >Tailwind</a
         >,
         <a
           href="https://postcss.org/"
-          class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline"
           target="_blank"
           >PostCSS</a
         >
         (nesting, imports, media queries, minify),
         <a
           href="https://fontawesome.com/"
-          class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline"
           target="_blank"
           >Fontawesome</a
         >
         Icons,
         <a
           href="https://webpack.js.org/"
-          class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline"
           target="_blank"
           >Webpack</a
         >,
         <a
           href="https://www.typescriptlang.org/"
-          class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline"
           target="_blank"
           >Typescript</a
         >
         and
         <a
           href="https://vitejs.dev/"
-          class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline"
+          class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline"
           >Vite</a
         >
       </p>

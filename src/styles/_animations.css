@@ -19,11 +19,23 @@
 @keyframes neon {
     0%,
     100% {
-        text-shadow: 0 0 10px #08e95ea8, 0 0 10px #08e95ea8, 0 0 10px #08e95ea8, 0 0 10px #08e95ea8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        text-shadow:
+            0 0 10px #08e95ea8,
+            0 0 10px #08e95ea8,
+            0 0 10px #08e95ea8,
+            0 0 10px #08e95ea8,
+            0 0 2px #fed128,
+            2px 2px 2px #806914;
         color: #f5efcb;
     }
     50% {
-        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        text-shadow:
+            0 0 2px #800e0b,
+            0 0 5px #800e0b,
+            0 0 5px #800e0b,
+            0 0 5px #800e0b,
+            0 0 2px #800e0b,
+            4px 4px 2px #40340a;
         color: #eda0d3;
     }
 }
@@ -32,6 +44,8 @@
     animation-name: tilt-shaking;
     animation-duration: 0.35s;
     animation-iteration-count: infinite;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .neon {

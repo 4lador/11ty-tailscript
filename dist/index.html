@@ -4,9 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="An Eleventy starter kit using Typescript, Tailwind, PostCSS, Webpack, Vite, Fontawesome and WebC. Made by 4lador in 2023">
-        <title>Home</title>
+        <title>TailScript: The Eleventy Starter Kit</title>
         <link rel="icon" href="/assets/favicon.ico">
-        <link rel="stylesheet" href="/assets/libs/fontawesome/all.min.css">
+        
+        <!-- Hosted fonts & used Fontawesome icons -->
+        <link rel="preload" href="./styles/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="./styles/fonts.css"></noscript>
+        
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="/bundle/KuQf66fLUD.css">
         <script src="/bundle/NuZPh7dROl.js" type="module"></script>
@@ -17,9 +21,9 @@
             <div class="min-h-screen flex flex-col">
                 <etail-navbar class="sticky top-0 wvvvl6z7-">
 
-<section class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b">
+<section class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-800 border-b z-20">
   <div class="logo h-8 pr-4 m-auto sm:flex-none text-center">
-    <a href="#top" class="align-middle text-3xl hover:text-orange-300 active:text-orange-400"><i class="fa fa-home"></i></a>
+    <a href="#top" aria-label="Go back to home" class="align-middle text-3xl hover:text-orange-300 active:text-orange-400"><i class="fa fa-home"></i></a>
   </div>
 
   <div class="nav flex flex-auto flex-wrap md:space-x-7 text-center">
@@ -29,9 +33,9 @@
   </div>
 </section>
 </etail-navbar>
-                <page-content class="flex-1 flex flex-col items-stretch bg-blue-300 pb-10"><etail-hero class="whsxug9qv">
+                <page-content class="flex-1 flex flex-col items-stretch bg-gray-200 pb-10"><etail-hero class="whsxug9qv">
 
-<section class="text-center pt-32 pb-32 bg-blue-400">
+<section class="text-center min-h-fit py-64 md:py-80 bg-blue-500">
   <h1 class="text-5xl sm:text-6xl md:text-8xl font-hero-title neon">Tailscript</h1>
   <note class="text-xl md:text-2xl font-hero-subtitle italic">The Eleventy starter kit</note>
 </section>
@@ -45,17 +49,17 @@
 
       <p class="text-xl md:text-2xl max-w-prose text-justify">
         This is a <strong>minimalist</strong>, <strong>ready to use</strong>
-        <a href="https://www.11ty.dev" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Eleventy</a>
+        <a href="https://www.11ty.dev" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Eleventy</a>
         starter project that embarks
-        <a href="https://tailwindcss.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Tailwind</a>,
-        <a href="https://postcss.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">PostCSS</a>
+        <a href="https://tailwindcss.com/" target="_blank" class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline">Tailwind</a>,
+        <a href="https://postcss.org/" target="_blank" class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline">PostCSS</a>
         (nesting, imports, media queries, minify),
-        <a href="https://fontawesome.com/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Fontawesome</a>
+        <a href="https://fontawesome.com/" target="_blank" class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline">Fontawesome</a>
         Icons,
-        <a href="https://webpack.js.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Webpack</a>,
-        <a href="https://www.typescriptlang.org/" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Typescript</a>
+        <a href="https://webpack.js.org/" target="_blank" class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline">Webpack</a>,
+        <a href="https://www.typescriptlang.org/" target="_blank" class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline">Typescript</a>
         and
-        <a href="https://vitejs.dev/" class="font-medium text-blue-600 dark:text-blue-500 visited:text-blue-500 hover:underline">Vite</a>
+        <a href="https://vitejs.dev/" class="font-medium text-blue-800 dark:text-blue-500 visited:text-blue-700 hover:underline">Vite</a>
       </p>
     </section>
   </div>
@@ -70,7 +74,7 @@
 
     <p class="text-lg">
         Clone the
-        <a href="https://github.com/4lador/11ty-tailscript">Github project</a>
+        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github project</a>
         repo
     </p>
 
@@ -179,7 +183,7 @@
     <h3 class="text-2xl md:text-3xl/loose py-1">Fork the repository</h3>
     <p class="text-lg">
         Fork the project on
-        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github</a>
+        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github</a>
     </p>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">CD to the project folder</h3>
@@ -231,7 +235,7 @@
 
     <p class="text-lg">
         Head on over the
-        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github</a>
+        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github</a>
         project, then you will see a banner indicating that your branch is ahead
         of the main project branch. Click on <strong>contribute</strong> and
         then <strong>Open a pull request</strong>
@@ -241,14 +245,14 @@
     <p class="text-lg">
         If you need more informations about Github projects contributions
         you can check this page on
-        <a target="_blank" href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github Docs</a>
+        <a target="_blank" href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github Docs</a>
     </p>
 </section>
 </etail-documentation></page-content>
                 <etail-footer class="w2lp98hxh">
 
-<footer class="bg-blue-500 border-box border-t">
-    <div class="flex flex-col items-center justify-center text-xl h-full">
+<footer class="bg-blue-800 border-box border-t">
+    <div class="flex flex-col items-center justify-center text-xl h-full text-white">
         <div>
             Made with <i class="fa fa-heart text-red-700"></i> and <i class="fa fa-coffee text-amber-950"></i>
         </div>

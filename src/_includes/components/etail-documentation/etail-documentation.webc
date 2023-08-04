@@ -7,7 +7,7 @@
 
     <p class="text-lg">
         Clone the
-        <a href="https://github.com/4lador/11ty-tailscript">Github project</a>
+        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github project</a>
         repo
     </p>
 
@@ -58,7 +58,7 @@
         Fork the project on
         <a
             href="https://github.com/4lador/11ty-tailscript"
-            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
             >Github</a
         >
     </p>
@@ -79,7 +79,7 @@
         Head on over the
         <a
             href="https://github.com/4lador/11ty-tailscript"
-            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
             >Github</a
         >
         project, then you will see a banner indicating that your branch is ahead
@@ -93,7 +93,7 @@
         you can check this page on
         <a
             target="_blank"
-            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
             href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects"
             >Github Docs</a
         >

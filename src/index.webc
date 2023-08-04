@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.webc
-title: Home
+title: 'TailScript: The Eleventy Starter Kit'
 ---
 
 <etail-hero></etail-hero>

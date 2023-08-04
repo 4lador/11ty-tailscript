@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="etail-navbar.css" class="rel" webc:scoped />
 
 <section
-  class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-500 border-b"
+  class="sticky top-0 nav-container flex flex-wrap space-x-2 items-center px-4 py-3 text-white bg-blue-800 border-b z-20"
 >
   <div class="logo h-8 pr-4 m-auto sm:flex-none text-center">
-    <a href="#top" class="align-middle text-3xl hover:text-orange-300 active:text-orange-400"
+    <a href="#top" aria-label="Go back to home" class="align-middle text-3xl hover:text-orange-300 active:text-orange-400"
       ><i class="fa fa-home"></i
     ></a>
   </div>
