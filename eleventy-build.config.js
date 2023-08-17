@@ -10,6 +10,7 @@ const nesting = require('tailwindcss/nesting');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const { mkdir, access, writeFile, readFile } = require('node:fs/promises');
+const dirConfig = require('./eleventy.dirs.config.js').dir;
 
 const postcssPlugins = [
   postcssImport,
@@ -168,10 +169,6 @@ module.exports = (eleventyConfig) => {
   }
 
   return {
-    dir: {
-      input: "src",
-      output: "dist",
-      includes: "_includes",
-    },
+    dir: dirConfig
   };
 };

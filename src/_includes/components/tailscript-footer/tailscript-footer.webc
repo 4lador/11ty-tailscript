@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="etail-footer.css" class="rel" webc:scoped />
+<link rel="stylesheet" href="tailscript-footer.css" class="rel" webc:scoped />
 
 <footer class="bg-blue-800 border-box border-t">
     <div class="flex flex-col items-center justify-center text-xl h-full text-white">

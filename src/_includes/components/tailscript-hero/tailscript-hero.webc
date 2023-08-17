@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="etail-hero.css" class="rel" webc:scoped />
+<link rel="stylesheet" href="tailscript-hero.css" class="rel" webc:scoped />
 
 <section class="text-center min-h-fit py-64 md:py-80 bg-blue-500">
   <h1 class="text-5xl sm:text-6xl md:text-8xl font-hero-title neon">Tailscript</h1>

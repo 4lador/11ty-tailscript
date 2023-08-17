@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="etail-documentation.css" class="rel" webc:scoped />
+<link rel="stylesheet" href="tailscript-documentation.css" class="rel" webc:scoped />
 
 <section id="documentation" class="container mx-auto px-8 mt-16">
     <h2 class="text-3xl md:text-5xl/loose py-1">Installation</h2>
@@ -11,11 +11,11 @@
         repo
     </p>
 
-    <etail-code>git clone git@github.com:4lador/11ty-tailscript.git</etail-code>
+    <tailscript-code>git clone git@github.com:4lador/11ty-tailscript.git</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">CD to the project folder</h3>
 
-    <etail-code>cd 11ty-tailscript</etail-code>
+    <tailscript-code>cd 11ty-tailscript</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Install project libraries</h3>
 
@@ -24,7 +24,7 @@
         npm you only need to delete yarn.lock and install with npm
     </p>
 
-    <etail-code>yarn install</etail-code>
+    <tailscript-code>yarn install</tailscript-code>
 
     <h2 class="text-3xl md:text-5xl/loose py-1">Usage</h2>
 
@@ -34,7 +34,7 @@
         Launch the dev server and start development using Vite
     </p>
 
-    <etail-code>yarn run start</etail-code>
+    <tailscript-code>yarn run start</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Build</h3>
 
@@ -42,7 +42,7 @@
         When ready for production release just build the project with
     </p>
 
-    <etail-code>yarn run build</etail-code>
+    <tailscript-code>yarn run build</tailscript-code>
 </section>
 
 <section id="contribute" class="container mx-auto px-8 mt-16">
@@ -64,14 +64,14 @@
     </p>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">CD to the project folder</h3>
-    <etail-code>cd 11ty-tailscript</etail-code>
+    <tailscript-code>cd 11ty-tailscript</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Create a new branch</h3>
-    <etail-code>git checkout -b &lt;branch-name&gt;</etail-code>
+    <tailscript-code>git checkout -b &lt;branch-name&gt;</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Making and pushing changes</h3>
-    <etail-code
-        >git add .<br />git commit -m "a short description of the changes"</etail-code>
+    <tailscript-code
+        >git add .<br />git commit -m "a short description of the changes"</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Make a pull request</h3>
 
