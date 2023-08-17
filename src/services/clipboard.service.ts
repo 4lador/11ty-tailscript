@@ -1,10 +1,7 @@
-import copy from 'copy-to-clipboard';
+import copyClipboard from 'copy-to-clipboard';
 
 class ClipboardService {
-    copy(text: string) {
-        console.log('copy', copy);
-        copy(text);
-    }
+    copy = (text: string) => copyClipboard(text);
 }
 
 export const clipBoardService = new ClipboardService();

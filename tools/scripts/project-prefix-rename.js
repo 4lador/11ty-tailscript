@@ -51,7 +51,10 @@ function flatten(lists) {
     }));
 
     const results = await replace({
-        files: `${dirConfig.input}/**/*.webc`,
+        files: [
+            `${dirConfig.input}/**/*.webc`,
+            `${dirConfig.input}/**/*.ts`
+        ],
         from: new RegExp(`${oldPrefix}`, 'g'),
         to: newPrefix
     });

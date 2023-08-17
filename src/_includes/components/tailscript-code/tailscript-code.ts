@@ -63,4 +63,4 @@ class TailscriptCodeViewerComponent extends HTMLElement {
     }
 }
 
-window.customElements.define('etail-code', TailscriptCodeViewerComponent);
+window.customElements.define('tailscript-code', TailscriptCodeViewerComponent);
