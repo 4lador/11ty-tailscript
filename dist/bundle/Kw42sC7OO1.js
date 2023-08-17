@@ -201,7 +201,10 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.clipBoardService = void 0;
 const copy_to_clipboard_1 = __importDefault(__webpack_require__(/*! copy-to-clipboard */ "../node_modules/copy-to-clipboard/index.js"));
 class ClipboardService {
-    copy = (text) => (0, copy_to_clipboard_1.default)(text);
+    copy(text) {
+        console.log('copy', copy_to_clipboard_1.default);
+        (0, copy_to_clipboard_1.default)(text);
+    }
 }
 exports.clipBoardService = new ClipboardService();
 
