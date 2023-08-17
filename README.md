@@ -17,7 +17,7 @@ Feel free to use and improve me without limitations :)
 
 I got my own demo website that features my documentation, if you want to check it out.
 
-- [Demo & Doc](https://vocal-licorice-a3b377.netlify.app)
+[Demo & Documentation](https://vocal-licorice-a3b377.netlify.app)
 
 ## Lighthouse
 
