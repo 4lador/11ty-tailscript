@@ -243,9 +243,9 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 var exports = __webpack_exports__;
-/*!*******************************************************!*\
-  !*** ./_includes/components/etail-code/etail-code.ts ***!
-  \*******************************************************/
+/*!*****************************************************************!*\
+  !*** ./_includes/components/tailscript-code/tailscript-code.ts ***!
+  \*****************************************************************/
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const clipboard_service_1 = __webpack_require__(/*! ../../../services/clipboard.service */ "./services/clipboard.service.ts");

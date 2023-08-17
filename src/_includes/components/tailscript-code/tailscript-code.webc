@@ -1,9 +1,9 @@
-<script src="./etail-code.js" type="text/javascript"></script>
-<link rel="stylesheet" href="./etail-code.css" class="rel" webc:scoped />
+<script src="./tailscript-code.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./tailscript-code.css" class="rel" webc:scoped />
 
 <div
     class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2"
-    id="etail-code-template"
+    id="tailscript-code-template"
 >
     <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard"
   class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer  ">

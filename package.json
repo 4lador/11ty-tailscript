@@ -6,7 +6,8 @@
     "watch:pages": "webpack --watch",
     "watch:11ty": "eleventy --serve --incremental --watch",
     "watch:11ty-nested-webc-fix": "find src/_includes/components/ -type f -name \"*.webc\" | entr sh -c 'sleep 0.2; touch src/_includes/layouts/base.webc'",
-    "clean": "rimraf dist/"
+    "clean": "rimraf dist/",
+    "rename-project-prefix": "run() { node ./tools/scripts/project-prefix-rename.js $1 $2; }; run"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -27,6 +28,7 @@
     "postcss-media-minmax": "^5.0.0",
     "postcss-preset-env": "^9.0.0",
     "prettier": "^3.0.0",
+    "replace-in-file": "^7.0.1",
     "rimraf": "^5.0.1",
     "sass": "^1.64.0",
     "tailwindcss": "^3.3.3",
