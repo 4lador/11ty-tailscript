@@ -48,7 +48,7 @@
         Linux executable
     </h3>
     <p class="text-lg max-w-prose">
-        This project use a workaround to fix an issue with webc nested components not
+        This project features a workaround to fix an issue with webc nested components not
         being able to reload themselves when edited on Eleventy. This workaround
         involve
         <a
