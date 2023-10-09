@@ -1,4 +1,9 @@
-<link rel="stylesheet" href="tailscript-documentation.css" class="rel" webc:scoped />
+<link
+    rel="stylesheet"
+    href="tailscript-documentation.css"
+    class="rel"
+    webc:scoped
+/>
 
 <section id="documentation" class="container mx-auto px-8 mt-16">
     <!-- INSTALLATION -->
@@ -8,11 +13,17 @@
 
     <p class="text-lg">
         Clone the
-        <a href="https://github.com/4lador/11ty-tailscript" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github project</a>
+        <a
+            href="https://github.com/4lador/11ty-tailscript"
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
+            >Github project</a
+        >
         repo
     </p>
 
-    <tailscript-code>git clone git@github.com:4lador/11ty-tailscript.git</tailscript-code>
+    <tailscript-code
+        >git clone git@github.com:4lador/11ty-tailscript.git</tailscript-code
+    >
 
     <h3 class="text-2xl md:text-3xl/loose py-1">CD to the project folder</h3>
 
@@ -26,6 +37,42 @@
     </p>
 
     <tailscript-code>yarn install</tailscript-code>
+
+    <h3 class="text-2xl md:text-3xl/loose py-1">
+        Install
+        <a
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
+            href="https://github.com/eradman/entr"
+            >entr</a
+        >
+        Linux executable
+    </h3>
+    <p class="text-lg max-w-prose">
+        This project use a workaround to fix an issue with webc nested components not
+        being able to reload themselves when edited on Eleventy. This workaround
+        involve
+        <a
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
+            href="https://github.com/eradman/entr"
+            >entr</a
+        >
+        Linux / MacOS tool to be able to refresh the page when you edit a nested
+        component. If you are a Windows user, you should remove the workaround by
+        deleting this part on the package.json scripts section:
+        "watch:11ty-nested-webc-fix" If you are a Linux or MacOS user, you
+        should download
+        <a
+            class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
+            href="https://github.com/eradman/entr"
+            >entr</a
+        >
+    </p>
+
+    <h4 class="text-xl md:text-2xl/loose py-1">Debian based</h4>
+    <tailscript-code>sudo apt install entr</tailscript-code>
+
+    <h4 class="text-xl md:text-2xl/loose py-1">Archlinux flavour</h4>
+    <tailscript-code>sudo pacman -S entr</tailscript-code>
 
     <!-- USAGE -->
     <h2 class="text-3xl md:text-5xl/loose py-1">Usage</h2>
@@ -47,11 +94,20 @@
     <tailscript-code>yarn run build</tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Rename project prefixes</h3>
-    <p class="text-lg max-w-prose">If you want to rename component file names prefixes and linked tags in webc files, you can do it quickly that way</p>
+    <p class="text-lg max-w-prose">
+        If you want to rename component file names prefixes and linked tags in
+        webc files, you can do it quickly that way
+    </p>
 
-    <tailscript-code>yarn run rename-project-prefix tailscript &lt;new-prefix&gt;</tailscript-code>
+    <tailscript-code
+        >yarn run rename-project-prefix tailscript
+        &lt;new-prefix&gt;</tailscript-code
+    >
 
-    <p class="text-lg max-w-prose">Where the first argument is the old prefix (tailscript by default) and the 2nd argument is your new prefix</p>
+    <p class="text-lg max-w-prose">
+        Where the first argument is the old prefix (tailscript by default) and
+        the 2nd argument is your new prefix
+    </p>
 </section>
 
 <section id="contribute" class="container mx-auto px-8 mt-16">
@@ -80,7 +136,9 @@
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Making and pushing changes</h3>
     <tailscript-code
-        >git add .<br />git commit -m "a short description of the changes"</tailscript-code>
+        >git add .<br />git commit -m "a short description of the
+        changes"</tailscript-code
+    >
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Make a pull request</h3>
 
@@ -98,8 +156,8 @@
 
     <h3 class="text-2xl md:text-3xl/loose py-1">More informations</h3>
     <p class="text-lg">
-        If you need more informations about Github projects contributions
-        you can check this page on
+        If you need more informations about Github projects contributions you
+        can check this page on
         <a
             target="_blank"
             class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"

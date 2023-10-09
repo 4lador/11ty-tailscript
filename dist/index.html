@@ -130,6 +130,54 @@
     </button>
 </div></tailscript-code>
 
+    <h3 class="text-2xl md:text-3xl/loose py-1">
+        Install
+        <a href="https://github.com/eradman/entr" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">entr</a>
+        Linux executable
+    </h3>
+    <p class="text-lg max-w-prose">
+        This project use a workaround to fix an issue with webc nested components not
+        being able to reload themselves when edited on Eleventy. This workaround
+        involve
+        <a href="https://github.com/eradman/entr" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">entr</a>
+        Linux / MacOS tool to be able to refresh the page when you edit a nested
+        component. If you are a Windows user, you should remove the workaround by
+        deleting this part on the package.json scripts section:
+        "watch:11ty-nested-webc-fix" If you are a Linux or MacOS user, you
+        should download
+        <a href="https://github.com/eradman/entr" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">entr</a>
+    </p>
+
+    <h4 class="text-xl md:text-2xl/loose py-1">Debian based</h4>
+    <tailscript-code class="wouz3qwgb">
+
+
+<div id="tailscript-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">sudo apt install entr</span></span>
+</code></pre>
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div></tailscript-code>
+
+    <h4 class="text-xl md:text-2xl/loose py-1">Archlinux flavour</h4>
+    <tailscript-code class="wouz3qwgb">
+
+
+<div id="tailscript-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
+    <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
+  <span>$ <span id="commands">sudo pacman -S entr</span></span>
+</code></pre>
+    <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
+        <i class="fa fa-clipboard"></i>
+        <span class="label inline-block group-[&amp;.copied]:hidden">Copy</span>
+        <span class="label-copied tilt-shaking hidden group-[&amp;.copied]:inline-block">Copied !</span>
+    </button>
+</div></tailscript-code>
+
     <!-- USAGE -->
     <h2 class="text-3xl md:text-5xl/loose py-1">Usage</h2>
 
@@ -174,14 +222,18 @@
 </div></tailscript-code>
 
     <h3 class="text-2xl md:text-3xl/loose py-1">Rename project prefixes</h3>
-    <p class="text-lg max-w-prose">If you want to rename component file names prefixes and linked tags in webc files, you can do it quickly that way</p>
+    <p class="text-lg max-w-prose">
+        If you want to rename component file names prefixes and linked tags in
+        webc files, you can do it quickly that way
+    </p>
 
     <tailscript-code class="wouz3qwgb">
 
 
 <div id="tailscript-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
     <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
-  <span>$ <span id="commands">yarn run rename-project-prefix tailscript &lt;new-prefix&gt;</span></span>
+  <span>$ <span id="commands">yarn run rename-project-prefix tailscript
+        &lt;new-prefix&gt;</span></span>
 </code></pre>
     <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
@@ -190,7 +242,10 @@
     </button>
 </div></tailscript-code>
 
-    <p class="text-lg max-w-prose">Where the first argument is the old prefix (tailscript by default) and the 2nd argument is your new prefix</p>
+    <p class="text-lg max-w-prose">
+        Where the first argument is the old prefix (tailscript by default) and
+        the 2nd argument is your new prefix
+    </p>
 </section>
 
 <section id="contribute" class="container mx-auto px-8 mt-16">
@@ -243,7 +298,8 @@
 
 <div id="tailscript-code-template" class="group hover:bg-slate-700 text-sm md:text-base flex align-middle w-fit my-2">
     <pre class="peer whitespace-pre-wrap"><code data-onclick="copyToClipboard" class="flex items-center bg-gray-100 group-hover:bg-slate-700 group-hover:text-green-400 p-4 h-fit w-fit cursor-pointer">
-  <span>$ <span id="commands">git add .<br>git commit -m "a short description of the changes"</span></span>
+  <span>$ <span id="commands">git add .<br>git commit -m "a short description of the
+        changes"</span></span>
 </code></pre>
     <button id="copyBtn" data-onclick="copyToClipboard" class="group hidden md:group-hover:block group-hover:bg-slate-800 border-l-2 w-24">
         <i class="fa fa-clipboard"></i>
@@ -264,8 +320,8 @@
 
     <h3 class="text-2xl md:text-3xl/loose py-1">More informations</h3>
     <p class="text-lg">
-        If you need more informations about Github projects contributions
-        you can check this page on
+        If you need more informations about Github projects contributions you
+        can check this page on
         <a target="_blank" href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects" class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline">Github Docs</a>
     </p>
 </section>
