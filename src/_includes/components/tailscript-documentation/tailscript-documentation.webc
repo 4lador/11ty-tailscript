@@ -48,19 +48,22 @@
         Linux executable
     </h3>
     <p class="text-lg max-w-prose">
-        This project features a workaround to fix an issue with webc nested components not
-        being able to reload themselves when edited on Eleventy. This workaround
-        involve
+        This project features a workaround to fix an issue with webc nested
+        components not being able to reload themselves when edited on Eleventy.
+        This workaround involve
         <a
             class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
             href="https://github.com/eradman/entr"
             >entr</a
         >
         Linux / MacOS tool to be able to refresh the page when you edit a nested
-        component. If you are a Windows user, you should remove the workaround by
-        deleting this part on the package.json scripts section:
-        "watch:11ty-nested-webc-fix" If you are a Linux or MacOS user, you
-        should download
+        component. If you are a Windows user, you should remove the workaround
+        by deleting this line on the package.json scripts section:
+        "watch:11ty-nested-webc-fix" .
+    </p>
+
+    <p class="text-lg max-w-prose">
+        If you are a Linux or MacOS user, you should download
         <a
             class="font-medium text-blue-800 visited:text-blue-700 dark:text-blue-500 hover:underline"
             href="https://github.com/eradman/entr"
