@@ -45,6 +45,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "copy-to-clipboard": "^3.3.3"
+    "copy-to-clipboard": "^3.3.3",
+    "decap-cms-app": "^3.0.8"
   }
 }
