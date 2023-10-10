@@ -59,6 +59,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addWatchTarget("./src/_includes/components/**/*.js");
 
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({"src/_includes/admin": "admin"});
 
   eleventyConfig.addTemplateFormats('webc');
   eleventyConfig.addTemplateFormats("js");
