@@ -21,7 +21,7 @@ module.exports = {
   cache: true,
   devtool: false,
   resolve: {
-    extensions: ['.ts'],
+    extensions: ['.ts', '.js'],
   },
   mode: "development",
   module: {

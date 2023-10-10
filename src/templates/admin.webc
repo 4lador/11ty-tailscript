@@ -1,0 +1,7 @@
+---
+layout: layouts/admin-layout.webc
+title: 'TailScript: The Eleventy Starter Kit'
+permalink: 'admin/index.html'
+---
+
+<tailscript-admin></tailscript-admin>
