@@ -1,0 +1,45 @@
+---
+title: Tailscript Administration
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Tailwind (11ty starter project) CMS administration"
+        />
+        <title @html="this.title"></title>
+        <link rel="icon" href="/assets/favicon.ico" />
+
+        <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+        <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" webc:keep></script>
+        <script webc:keep>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on('init', (user) => {
+                    console.log('Netlify ID: Init');
+                    if (!user) {
+                        window.netlifyIdentity.on('login', () => {
+                            console.log('Netlify ID: Login');
+                            document.location.href = '/admin/';
+                        });
+                    }
+                });
+            }
+        </script>
+    </head>
+
+    <body class="font-body">
+        <section>
+            <div class="min-h-screen flex flex-col">
+                <page-content
+                    @raw="content"
+                    class="flex-1 flex flex-col items-stretch bg-gray-200 pb-10"
+                ></page-content>
+            </div>
+        </section>
+    </body>
+</html>
