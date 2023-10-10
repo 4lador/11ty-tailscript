@@ -1,8 +1,0 @@
----
-layout: layouts/base.webc
-title: 'TailScript: The Eleventy Starter Kit'
----
-
-<tailscript-hero></tailscript-hero>
-<tailscript-faq id="faq"></tailscript-faq>
-<tailscript-documentation id="documentation"></tailscript-documentation>
