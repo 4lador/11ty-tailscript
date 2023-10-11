@@ -24,11 +24,10 @@
     </head>
 
     <body class="font-body">
-        <div class="min-h-screen flex flex-col">
-            <tailscript-navbar class="sticky top-0"></tailscript-navbar>
+            <section class="min-h-screen flex flex-col">
+                <tailscript-navbar class="sticky top-0"></tailscript-navbar>
 
-            <section class="container mx-auto">
-                <div class="article-content">
+                <div class="article-content container mx-auto flex-1 flex flex-col items-stretch">
                     <div class="featured-picture flex justify-center">
                         <img
                             :src="getProdSrc(thumbnail)"
@@ -36,7 +35,7 @@
                         />
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center mb-5">
                         <h1 class="text-4xl" @text="title"></h1>
                         <p class="text-sm"><span @text="date.toLocaleDateString()"></span></p>
 
@@ -48,12 +47,12 @@
 
                     <page-content
                         @raw="content"
-                        class="flex-1 flex flex-col items-stretch bg-gray-200 pb-10"
+                        class=" bg-gray-200 pb-10"
                     ></page-content>
                 </div>
-            </section>
 
-            <tailscript-footer @name="4lador"></tailscript-footer>
+                <tailscript-footer @name="4lador"></tailscript-footer>
+            </section>
         </div>
     </body>
 </html>
