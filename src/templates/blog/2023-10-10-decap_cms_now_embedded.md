@@ -12,7 +12,7 @@ As of today, TailScript now includes [Decap](https://decapcms.org/) headless CMS
 
 ## Why Decap ?[](https://decapcms.org/docs/add-to-your-site/#authentication)
 
-[](https://decapcms.org/docs/add-to-your-site/#authentication)I chosed Decap CMS for the following reasons: 
+I chosed Decap CMS for the following reasons: 
 
 1. Hosted with your website (You don't need to host it on a VPS)
 2. FOSS (Free Open Source Software)
