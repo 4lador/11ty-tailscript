@@ -1,5 +1,6 @@
 ---
 layout: layouts/blog.webc
+tags: post
 permalink: blog/test.html
 title: Decap CMS now Embedded !
 author: 4lador
