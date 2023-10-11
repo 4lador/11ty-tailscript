@@ -1,0 +1,3 @@
+<div webc:for="post of collections.blog">
+    <span @text="post"></span>
+</div>
