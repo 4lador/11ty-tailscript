@@ -1,0 +1,4 @@
+<a :href="url" class="block border-2 rounded border-indigo-500 p-5 text-center">
+    <div @text="title" class="text-xl md:text-2xl/loose"></div>
+    <div @text="`${date.toLocaleDateString()} by ${author}`"></div>
+</a>
