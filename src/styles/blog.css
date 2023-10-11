@@ -13,4 +13,12 @@
         list-style: auto;
         margin-left: 3em;
     }
+
+    h1, h2, h3, h4, h5 {
+        margin: 1.5rem 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
 }

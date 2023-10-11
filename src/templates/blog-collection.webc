@@ -1,0 +1,6 @@
+---
+layout: layouts/collection-list.webc
+title: 'All blog posts'
+collection: 'blog'
+permalink: 'blog/index.html'
+---
