@@ -145,6 +145,11 @@ module.exports = (eleventyConfig) => {
         source: `${srcDir}/fonts.css`,
         destination: `${destDir}/fonts.css`,
         plugins: [...postcssPlugins, purgecss({content: ['./dist/**/*.html']})]
+      },
+      {
+        source: `${srcDir}/blog.css`,
+        destination: `${destDir}/blog.css`,
+        plugins: [...postcssPlugins, purgecss({content: ['./dist/**/*.html']})]
       }
     ];
     
