@@ -10,6 +10,7 @@ Hello, I am a minimalist starter project that glues together:
 - <a href="https://github.com/11ty/webc" target="blank">WebC</a>
 - <a href="https://webpack.js.org" target="blank">Webpack</a>
 - <a href="https://vitejs.dev" target="blank">Vite</a>
+- <a href="https://decapcms.org" target="blank">Decap CMS</a>
 
 Feel free to use and improve me without limitations :)
 
