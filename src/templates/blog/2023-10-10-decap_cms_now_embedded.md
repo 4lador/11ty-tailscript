@@ -1,7 +1,6 @@
 ---
 layout: layouts/blog.webc
 permalink: blog/test.html
-author: 4lador
 title: Decap CMS now Embedded !
 author: 4lador
 date: 2023-10-10T22:16:05.362Z
