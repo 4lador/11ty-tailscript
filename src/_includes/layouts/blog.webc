@@ -1,0 +1,59 @@
+---js
+{
+    title: "Blog Layout",
+    getProdSrc: function(src) {
+        return src.replace('/src', '');
+    }
+
+}
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Tailwind (11ty starter project) CMS administration"
+        />
+        <title @html="this.title"></title>
+        <link rel="icon" href="/assets/favicon.ico" />
+        <link webc:keep rel="stylesheet" href="../styles/index.css" />
+        <link webc:keep rel="stylesheet" href="../styles/blog.css" />
+    </head>
+
+    <body class="font-body">
+        <div class="min-h-screen flex flex-col">
+            <tailscript-navbar class="sticky top-0"></tailscript-navbar>
+
+            <section class="container mx-auto">
+                <div class="article-content">
+                    <div class="featured-picture flex justify-center">
+                        <img
+                            :src="getProdSrc(thumbnail)"
+                            alt="Article featured picture"
+                        />
+                    </div>
+
+                    <div class="text-center">
+                        <h1 class="text-4xl" @text="title"></h1>
+                        <p class="text-sm"><span @text="date.toLocaleDateString()"></span></p>
+
+                        <p class="text-sm">
+                            By <span @text="author"></span>
+                            
+                        </p>
+                    </div>
+
+                    <page-content
+                        @raw="content"
+                        class="min-h-screen flex-1 flex flex-col items-stretch p-10 text-justify"
+                    ></page-content>
+                </div>
+            </section>
+
+            <tailscript-footer @name="4lador"></tailscript-footer>
+        </div>
+    </body>
+</html>
