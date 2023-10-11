@@ -1,7 +1,16 @@
-a {
-    color: blue;
+.article-content {
+    a {
+        color: blue;
 
-    &:hover {
-        text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    menu,
+    ol,
+    ul {
+        list-style: auto;
+        margin-left: 3em;
     }
 }
