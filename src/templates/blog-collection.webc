@@ -1,6 +1,14 @@
 ---
 layout: layouts/collection-list.webc
-title: 'All blog posts'
-collection: 'blog'
+title: 'TailScript - Blog Posts'
+collection: 'post'
 permalink: 'blog/index.html'
 ---
+
+<div class="container mx-auto mt-4">
+    <h1 class="text-3xl md:text-5xl/loose">Latest Posts</h1>
+
+    <div webc:for="(key, item) in collections[this.collection]">
+        <tailscript-blog-list-item :@date="item.data.date" :@title="item.data.title" :@author="item.data.author" :@url="item.url"></tailscript-blog-list-item>
+    </div>    
+</div>

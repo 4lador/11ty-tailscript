@@ -1,3 +1,34 @@
-<div webc:for="post of collections.blog">
-    <span @text="post"></span>
-</div>
+
+
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="An Eleventy starter kit using Typescript, Tailwind, PostCSS, Webpack, Vite, Fontawesome and WebC. Made by 4lador in 2023"
+        />
+        <title @html="this.title"></title>
+        <link rel="icon" href="/assets/favicon.ico" />
+        
+        <link webc:keep rel="stylesheet" href="../styles/index.css" />
+        <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+        <script :src="getBundleFileUrl('js')" type="module" webc:keep></script>
+    </head>
+
+    <body class="font-body">
+        <section>
+            <div class="min-h-screen flex flex-col">
+                <tailscript-navbar class="sticky top-0"></tailscript-navbar>
+                <page-content
+                    @raw="content"
+                    class="flex-1 flex flex-col items-stretch bg-gray-200 pb-10"
+                ></page-content>
+                <tailscript-footer @name="4lador"></tailscript-footer>
+            </div>
+        </section>
+    </body>
+</html>

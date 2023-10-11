@@ -48,7 +48,7 @@
 
                     <page-content
                         @raw="content"
-                        class="min-h-screen flex-1 flex flex-col items-stretch p-10 text-justify"
+                        class="flex-1 flex flex-col items-stretch bg-gray-200 pb-10"
                     ></page-content>
                 </div>
             </section>
