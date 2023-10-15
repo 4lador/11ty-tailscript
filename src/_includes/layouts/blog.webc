@@ -47,7 +47,7 @@
 
                     <page-content
                         @raw="content"
-                        class=" bg-gray-200 pb-10"
+                        class="pb-10"
                     ></page-content>
                 </div>
 
